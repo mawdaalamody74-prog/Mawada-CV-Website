@@ -21,8 +21,8 @@ const translations = {
     brandName: "مودة العمودي",
 
     navHome: "الرئيسية",
-    navProjects: "المشاريع",
     navAbout: "نبذة عني",
+    navProjects: "معرض الأعمال",
     navSkills: "المهارات",
     navEducation: "التعليم",
     navContact: "تواصل",
@@ -34,15 +34,18 @@ const translations = {
     heroRole: "AI SPECIALIST · DIGITAL OPERATIONS",
     heroLead:
       "أبني حلولًا رقمية تجمع بين الذكاء الاصطناعي، البيانات، والتقنية لتحويل الأفكار إلى تجارب عملية.",
-    heroCtaPrimary: "مشاريعي",
+    heroCtaPrimary: "معرض الأعمال",
 
     topicAI: "ذكاء اصطناعي",
     topicData: "بيانات",
     topicAutomation: "أتمتة",
     topicWeb: "ويب",
 
-    projectsHeading: "المشاريع المختارة",
+    projectsHeading: "معرض الأعمال",
     projectsNote: "أعمال منشورة بالكامل — يمكن فتحها مباشرة.",
+    galleryDescription:
+      "معرض أعمالي الذي يجمع مشاريعي وتجاربي في تصميم وتطوير المواقع، مع نبذة عن كل مشروع وروابط مباشرة لعرضها.",
+    galleryCta: "عرض معرض الأعمال",
     featuredLabel: "مشروع مميّز",
     statusCompleted: "مكتمل ومنشور",
 
@@ -108,6 +111,7 @@ const translations = {
 
     quickContact: "تواصل سريع",
     nextAbout: "القادم — نبذة عني",
+    nextGallery: "القادم — معرض الأعمال",
     nextSkills: "القادم — المهارات",
     nextEducation: "القادم — التعليم",
     nextContact: "القادم — تواصل",
@@ -130,8 +134,8 @@ const translations = {
     brandName: "Mawada Alamody",
 
     navHome: "Home",
-    navProjects: "Projects",
     navAbout: "About",
+    navProjects: "Portfolio Gallery",
     navSkills: "Skills",
     navEducation: "Education",
     navContact: "Contact",
@@ -143,15 +147,18 @@ const translations = {
     heroRole: "AI SPECIALIST · DIGITAL OPERATIONS",
     heroLead:
       "I build digital solutions that bring artificial intelligence, data, and technology together to turn ideas into working experiences.",
-    heroCtaPrimary: "My Projects",
+    heroCtaPrimary: "Portfolio Gallery",
 
     topicAI: "Artificial Intelligence",
     topicData: "Data",
     topicAutomation: "Automation",
     topicWeb: "Web",
 
-    projectsHeading: "Selected Works",
+    projectsHeading: "Portfolio Gallery",
     projectsNote: "Fully published projects — open them live.",
+    galleryDescription:
+      "My gallery bringing together my projects and experience in web design and development, with a short note on each project and direct links to view them.",
+    galleryCta: "Open Portfolio Gallery",
     featuredLabel: "Featured",
     statusCompleted: "Completed · Live",
 
@@ -217,6 +224,7 @@ const translations = {
 
     quickContact: "Quick contact",
     nextAbout: "Next — About",
+    nextGallery: "Next — Portfolio Gallery",
     nextSkills: "Next — Skills",
     nextEducation: "Next — Education",
     nextContact: "Next — Contact",
@@ -254,8 +262,8 @@ const prefersReducedMotion = window.matchMedia(
 
 const sectionIds = [
   "home",
-  "projects",
   "about",
+  "projects",
   "skills",
   "education",
   "contact"
@@ -462,7 +470,7 @@ function updateCurrentYear() {
 
 function setupScrollReveal() {
   const elements = document.querySelectorAll(
-    ".section-head, .work, .about-grid, .skill-group, .timeline-item, .contact-list"
+    ".section-head, .work, .gallery, .about-grid, .skill-group, .timeline-item, .contact-list"
   );
 
   if (
